@@ -1,4 +1,4 @@
-# claude-code-statusline
+# claude-code-statusline-progress
 
 A terminal status line for [Claude Code](https://claude.ai/code) that shows your current model, effort level, session context usage, and rolling rate-limit consumption — all in one compact bar.
 
@@ -22,7 +22,7 @@ The 5h and 7d gauges are fetched from Anthropic's rate-limit response headers an
 ## Install
 
 ```sh
-npx claude-code-statusline
+npx claude-code-statusline-progress
 ```
 
 The installer will:
@@ -44,7 +44,7 @@ Color thresholds control when each bar transitions from green → yellow → red
 | 5-hour usage | 50% | 90% |
 | 7-day usage | 50% | 90% |
 
-To change them, re-run `npx claude-code-statusline` and answer `y` at the customize prompt, or edit the constants directly in `~/.claude/statusline-command.sh`:
+To change them, re-run `npx claude-code-statusline-progress` and answer `y` at the customize prompt, or edit the constants directly in `~/.claude/statusline-command.sh`:
 
 ```python
 CONTEXT_WARN   = 0.20
